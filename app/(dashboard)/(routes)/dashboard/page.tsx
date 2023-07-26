@@ -1,10 +1,14 @@
 import { Button } from '@/components/ui/button'
+import { UserButton } from '@clerk/nextjs';
 import Image from 'next/image'
 
-const DashboardPage=()=> {
+const DashboardPage = () => {
   return (
-   <p>Dashboard Page</p>
+  <>
+    <p>Dashboard Page</p>
+    <UserButton afterSignOutUrl='/' />
+  </>
   )
 }
 
-export default DashboardPage ;
+export default DashboardPage;
